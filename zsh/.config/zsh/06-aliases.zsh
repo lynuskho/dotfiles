@@ -8,7 +8,7 @@ alias auth='eval $(ssh-agent)'
 
 alias b="brightnessctl set"
 # alias v="wpctl set-volume @DEFAULT_SINK@"
-alias v='(){wpctl set-volume @DEFAULT_SINK@ $1 %;}'
+alias v='(){wpctl set-volume @DEFAULT_SINK@ $1%;}'
 
 #clean home
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
