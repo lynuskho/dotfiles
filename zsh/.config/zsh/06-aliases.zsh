@@ -4,9 +4,11 @@ alias xm="xmodmap $XDG_CONFIG_HOME/X11/.Xmodmap"
 alias leg="hledger"
 alias vimtex='NVIM_APPNAME="nvim-vimtex" nvim'
 # alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree ~'
+alias auth='eval $(ssh-agent)'
 
 alias b="brightnessctl set"
-alias v="wpctl set-volume @DEFAULT_SINK@"
+# alias v="wpctl set-volume @DEFAULT_SINK@"
+alias v='(){wpctl set-volume @DEFAULT_SINK@ $1 %;}'
 
 #clean home
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
