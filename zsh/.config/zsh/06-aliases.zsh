@@ -10,6 +10,8 @@ alias b="brightnessctl set"
 # alias v="wpctl set-volume @DEFAULT_SINK@"
 alias v='(){wpctl set-volume @DEFAULT_SINK@ $1%;}'
 
+alias venv='[ ! -d "./venv" ] && python3 -m venv venv; source venv/bin/activate'
+
 #clean home
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
